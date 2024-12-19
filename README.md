@@ -23,16 +23,23 @@ suboptimal performance in complex environments. To address this, we propose UA-M
 
 ## Experiments in simulation
 
-[![Simulation](https://img.youtube.com/vi/zkbm0Tkp-PM/0.jpg)](https://www.youtube.com/watch?v=zkbm0Tkp-PM)
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/zkbm0Tkp-PM" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
 
 ## Experiments in real scenes
 
 ### Digitalize The Hive in 15 mins
-[![Simulation](https://img.youtube.com/vi/ocwUdYUv48s/0.jpg)](https://www.youtube.com/watch?v=ocwUdYUv48s)
+[![Simulation](https://img.youtube.com/vi/ocwUdYUv48s/maxresdefault.jpg)](https://www.youtube.com/watch?v=ocwUdYUv48s)
 
 ### Digitalize The Spine in 10 Mins
 
-[![Simulation](https://img.youtube.com/vi/1H2dB0aJLSo/0.jpg)](https://www.youtube.com/watch?v=1H2dB0aJLSo)
+[![Simulation](https://img.youtube.com/vi/1H2dB0aJLSo/maxresdefault.jpg)](https://www.youtube.com/watch?v=1H2dB0aJLSo)
 
 ## Acknowlegement
 
