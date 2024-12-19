@@ -1,7 +1,10 @@
 
-# UA-MPC: Uncertainty-Aware Model Predictive Control for Motorized LiDAR Odometry
+# UA-MPC
 
-
+> **UA-MPC: Uncertainty-Aware Model Predictive Control for Motorized LiDAR Odometry**<br/>
+> Jianping Li, Xinhang Xu, Jinxin Liu, Kun Cao, Shenghai Yuan, Lihua Xie
+> *arXiv 2024*<br/>
+> [**Full Paper**](https://arxiv.org/pdf/2412.13873) 
 
 ## Experiments in simulation
 
