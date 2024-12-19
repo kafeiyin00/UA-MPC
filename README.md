@@ -13,12 +13,13 @@ suboptimal performance in complex environments. To address this, we propose UA-M
 
 ## System Overview
 
-<img src="https://pic.imgdb.cn/item/6763ae5ed0e0a243d4e6414e.jpg" alt="Coordinates" width="500px">
-<img src="https://pic.imgdb.cn/item/6763af59d0e0a243d4e6416d.png" alt="System" width="500px">
+<img src="/fig/coordinates.jpg" alt="Coordinates" width="500px">
+
+<img src="/fig/system.png" alt="System" width="500px">
 
 ## Simulation Environment
 
-<img src="https://pic.imgdb.cn/item/6763afcfd0e0a243d4e6417d.png" alt="Simulation" width="500px">
+<img src="/fig/Simulation.png" alt="Simulation" width="500px">
 
 ## Experiments in simulation
 
