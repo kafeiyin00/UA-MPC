@@ -4,8 +4,8 @@
 > **UA-MPC: Uncertainty-Aware Model Predictive Control for Motorized LiDAR Odometry**<br/>
 > Jianping Li, Xinhang Xu, Jinxin Liu, Kun Cao, Shenghai Yuan, Lihua Xie<br/>
 > Nanyang Technological University, Tongji University<br/>
-> *arXiv 2024*<br/>
-> [**Full Paper**](https://arxiv.org/pdf/2412.13873) 
+> IEEE RAL 2025<br/>
+> [**Full Paper**](https://ieeexplore.ieee.org/document/10900461) 
 
 ## TL;DR
 Motorized LiDAR systems can expand the Field of View (FoV) without adding multiple scanners, but existing motorized LiDAR systems often rely on constant-speed motor control, leading to
