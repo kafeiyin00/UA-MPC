@@ -1,0 +1,7 @@
+common:
+    act_lid_topic:  "/quad0_pcl_render_node/sensor_cloud"
+    rotorangle_topic: "/rotor_angle"
+    odometry_topic: "/aft_mapped_to_init"
+    cloud_registered_topic: "/cloud_registered"
+    sensing_frame_horizon: 50
+    simulation: true

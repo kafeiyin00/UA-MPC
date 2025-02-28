@@ -1,0 +1,14 @@
+
+<launch>
+
+    <!-- Include another launch file with arguments -->
+    <include file="$(find test_interface)/launch/single_drone_rotation_mid360_NTU.launch">
+    </include>
+
+    <rosparam command="load" file="$(find optimalcontroller)/config/simulation.yaml" />
+    <node pkg="optimalcontroller" type="optimalSpeedControl" name="optimalSpeedControl"/>
+    
+</launch>
+
+
+

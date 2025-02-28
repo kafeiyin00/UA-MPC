@@ -1,0 +1,45 @@
+<launch>
+    <arg name="use_gpu_" value="true"/>
+
+    <arg name="drone_num" value="1"/>
+
+    <arg name="frame_id" value="world"/>
+    <arg name="global_cloud_topic" value="/map_generator/global_cloud"/>
+    <arg name="odom_topic" value="/lidar_slam/odom"/>
+
+    <arg name="map_name" value="$(find map_generator)/resource/tuhh.pcd"/>
+    <arg name="traj_name" value="$(find odometry_generator)/resource/tuhh_day03.csv"/>
+    <arg name="downsample_resolution" value="0.4"/>
+
+    <arg name="use_uav_extra_model" value = "1"/>
+
+   <node pkg="map_generator" name="map_pub" type="map_pub" output="screen"
+         args="$(arg map_name)">
+        <param name="add_boundary" value="0"/>
+        <param name="is_bridge" value="0"/>
+        <param name="downsample_res" value="$(arg downsample_resolution)"/>         
+        <param name="map_offset_x" value="0.0"/>   
+        <param name="map_offset_y" value="0.0"/>   
+        <param name="map_offset_z" value="0.0"/>   
+   </node>
+
+    <include file="$(find test_interface)/launch/single_vehicle.xml">
+        <arg name="drone_id" value="0"/>
+        <arg name="uav_num_" value="$(arg drone_num)"/>
+        <arg name="lidar_type" value="mid360"/>
+        <arg name="init_x_" value="133"/>
+        <arg name="init_y_" value="33"/>
+        <arg name="init_z_" value="8"/>
+        <arg name="init_yaw" value="0.0"/>
+        <arg name="map_name_" value="$(arg map_name)"/>
+        <arg name="traj_name_" value="$(arg traj_name)"/>
+        <arg name="downsample_resolution_" value="$(arg downsample_resolution)"/>
+        <arg name="odom_topic" value="$(arg odom_topic)"/>
+        <arg name="use_gpu" value="$(arg use_gpu_)"/>
+        <arg name="use_uav_extra_model_" value="$(arg use_uav_extra_model)"/>
+    </include>
+
+   <node name="rvizvisualisation" pkg="rviz" type="rviz" output="screen"
+   args="-d $(find test_interface)/config/traj.rviz" />
+
+</launch>

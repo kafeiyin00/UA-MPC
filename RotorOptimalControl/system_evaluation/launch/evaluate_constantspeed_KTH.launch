@@ -1,0 +1,21 @@
+<launch>
+
+    <include file="$(find foxglove_bridge)/launch/foxglove_bridge.launch" />
+    
+    <include file="$(find i2ekf_lo)/launch/marsim.launch">
+    </include>
+
+    <node pkg="system_evaluation" type="evaluate_complete.py" name="evaluate_complete" output="screen">
+    <param name="log_file_path" value="$(find system_evaluation)/log"/>
+    </node>
+
+    <node pkg="system_evaluation" type="evaluate_ate.py" name="evaluate_ate" output="screen">
+    <param name="log_file_path" value="$(find system_evaluation)/log"/>
+    </node>
+
+    <include file="$(find test_interface)/launch/single_drone_rotation_mid360_KTH.launch">
+    </include>
+
+    <rosparam command="load" file="$(find optimalcontroller)/config/simulation.yaml"/>
+    <node pkg="optimalcontroller" type="constantSpeedControl" name="constantSpeedControl" output="screen"/>
+</launch>
